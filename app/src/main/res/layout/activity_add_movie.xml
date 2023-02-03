@@ -4,16 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddMovie">
+    tools:context=".AddMovieActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/popcorn" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/textSizeWidth"
+        android:layout_height="@dimen/textSizeHeight"
+        android:background="@drawable/rectangle"
+        android:padding="5dp"
         android:text="Title"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="124dp" />
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="120dp" />
 
     <Button
         android:id="@+id/button2"
@@ -30,17 +47,22 @@
         android:id="@+id/spinner2"
         android:layout_width="259dp"
         android:layout_height="25dp"
+        android:background="@android:drawable/btn_dropdown"
         tools:layout_editor_absoluteX="140dp"
         tools:layout_editor_absoluteY="364dp" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="49dp"
-        android:layout_height="23dp"
+        android:layout_width="@dimen/textSizeWidth"
+        android:layout_height="@dimen/textSizeHeight"
+        android:background="@drawable/rectangle"
+        android:padding="5dp"
         android:text="Genre"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="366dp" />
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="364dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -49,17 +71,22 @@
         android:ems="10"
         android:hint="Add notes here"
         android:inputType="textPersonName"
+        android:textColorHint="@color/black"
         tools:layout_editor_absoluteX="142dp"
         tools:layout_editor_absoluteY="208dp" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/textSizeWidth"
+        android:layout_height="@dimen/textSizeHeight"
+        android:background="@drawable/rectangle"
+        android:padding="5dp"
         android:text="Notes"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="245dp" />
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="241dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -67,6 +94,7 @@
         android:layout_height="40dp"
         android:ems="10"
         android:hint="Enter Movie Title"
+        android:textColorHint="@color/black"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="144dp"
         tools:layout_editor_absoluteY="120dp" />
@@ -75,16 +103,21 @@
         android:id="@+id/spinner3"
         android:layout_width="260dp"
         android:layout_height="28dp"
+        android:background="@android:drawable/btn_dropdown"
         tools:layout_editor_absoluteX="139dp"
         tools:layout_editor_absoluteY="465dp" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/textSizeWidth"
+        android:layout_height="@dimen/textSizeHeight"
+        android:background="@drawable/rectangle"
+        android:padding="5dp"
         android:text="Location"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="35dp"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="27dp"
         tools:layout_editor_absoluteY="465dp" />
 
     <Button
@@ -101,6 +134,7 @@
         android:layout_height="wrap_content"
         android:text="Add A Movie"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
         tools:layout_editor_absoluteX="144dp"
         tools:layout_editor_absoluteY="16dp" />
 
