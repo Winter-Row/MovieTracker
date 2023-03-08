@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "140639698594",
+    "project_id": "movietracker-78f45",
+    "storage_bucket": "movietracker-78f45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140639698594:android:6426506c7deb7df60161fb",
+        "android_client_info": {
+          "package_name": "com.lh1169835.movietracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140639698594-p3lisk3ns494scse0sh10lur0o9t0n10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv5KsoGQNEF-sxhoCXnkuzO9b_bAwoqF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140639698594-p3lisk3ns494scse0sh10lur0o9t0n10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">MovieTracker</string>
+    <string name="add_movie">Add Movie</string>
+    <string name="title">Title</string>
+    <string name="notes">Notes</string>
+    <string name="add_notes_here">Add notes here</string>
+    <string name="location">Location</string>
+    <string name="add_a_movie">Add A Movie</string>
+    <string name="enter_movie_title">Enter Movie Title</string>
+    <string name="genre">Genre</string>
+    <string name="view_movies">View Movies</string>
+    <string-array name="genres">
+        <item>Choose genre</item>
+        <item>Action</item>
+        <item>Adventure</item>
+        <item>Horror</item>
+        <item>Thriller</item>
+        <item>Drama</item>
+        <item>Comedy</item>
+        <item>Documentary</item>
+        <item>War</item>
+        <item>Western</item>
+        <item>Romance</item>
+        <item>Sci-Fi</item>
+        <item>TV</item>
+    </string-array>
+    <string-array name="location">
+        <item>Choose Location</item>
+        <item>Upstairs</item>
+        <item>Downstairs</item>
+    </string-array>
 </resources>

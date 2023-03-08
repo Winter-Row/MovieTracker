@@ -20,122 +20,152 @@
         app:srcCompat="@drawable/popcorn" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/titleText"
         android:layout_width="@dimen/textSizeWidth"
         android:layout_height="@dimen/textSizeHeight"
         android:background="@drawable/rectangle"
         android:padding="5dp"
-        android:text="Title"
+        android:text="@string/title"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textMovieTitle"
+        app:layout_constraintTop_toTopOf="@id/textMovieTitle"
+        app:layout_constraintBottom_toBottomOf="@id/textMovieTitle"
         tools:layout_editor_absoluteX="27dp"
         tools:layout_editor_absoluteY="120dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/viewMovieBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="View Movies"
+        android:text="@string/view_movies"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="259dp"
+        android:id="@+id/genreSpinner"
+        android:layout_width="250dp"
         android:layout_height="25dp"
-        android:background="@android:drawable/btn_dropdown"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="364dp" />
+        android:entries="@array/genres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textAddNotes"
+        app:layout_constraintBottom_toTopOf="@id/locationSpinner"
+        android:layout_marginEnd="10dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textGenre"
         android:layout_width="@dimen/textSizeWidth"
         android:layout_height="@dimen/textSizeHeight"
         android:background="@drawable/rectangle"
         android:padding="5dp"
-        android:text="Genre"
+        android:text="@string/genre"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="364dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/genreSpinner"
+        app:layout_constraintTop_toTopOf="@id/genreSpinner"
+        app:layout_constraintBottom_toBottomOf="@id/genreSpinner" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/textAddNotes"
         android:layout_width="261dp"
         android:layout_height="94dp"
         android:ems="10"
-        android:hint="Add notes here"
+        android:hint="@string/add_notes_here"
         android:inputType="textPersonName"
         android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/genreSpinner"
+        app:layout_constraintTop_toBottomOf="@id/textMovieTitle"
         tools:layout_editor_absoluteX="142dp"
         tools:layout_editor_absoluteY="208dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/notesText"
         android:layout_width="@dimen/textSizeWidth"
         android:layout_height="@dimen/textSizeHeight"
         android:background="@drawable/rectangle"
         android:padding="5dp"
-        android:text="Notes"
+        android:text="@string/notes"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textAddNotes"
+        app:layout_constraintTop_toTopOf="@id/textAddNotes"
+        app:layout_constraintBottom_toBottomOf="@id/textAddNotes"
         tools:layout_editor_absoluteX="27dp"
         tools:layout_editor_absoluteY="241dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/textMovieTitle"
         android:layout_width="259dp"
         android:layout_height="40dp"
         android:ems="10"
-        android:hint="Enter Movie Title"
+        android:hint="@string/enter_movie_title"
         android:textColorHint="@color/black"
         android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textHeader"
+        app:layout_constraintBottom_toTopOf="@id/textAddNotes"
         tools:layout_editor_absoluteX="144dp"
         tools:layout_editor_absoluteY="120dp" />
 
     <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="260dp"
+        android:id="@+id/locationSpinner"
+        android:layout_width="250dp"
         android:layout_height="28dp"
-        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/genreSpinner"
+        app:layout_constraintBottom_toTopOf="@id/MovieAddBtn"
+        android:layout_marginEnd="10dp"
         tools:layout_editor_absoluteX="139dp"
         tools:layout_editor_absoluteY="465dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textLocation"
         android:layout_width="@dimen/textSizeWidth"
         android:layout_height="@dimen/textSizeHeight"
         android:background="@drawable/rectangle"
         android:padding="5dp"
-        android:text="Location"
+        android:text="@string/location"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/locationSpinner"
+        app:layout_constraintTop_toTopOf="@id/locationSpinner"
+        app:layout_constraintBottom_toBottomOf="@id/locationSpinner"
         tools:layout_editor_absoluteX="27dp"
         tools:layout_editor_absoluteY="465dp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/MovieAddBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Movie"
+        android:text="Add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/viewMovieBtn"
         tools:layout_editor_absoluteX="152dp"
         tools:layout_editor_absoluteY="583dp" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add A Movie"
+        android:layout_marginTop="32dp"
+        android:text="@string/add_a_movie"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
