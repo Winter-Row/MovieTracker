@@ -1,5 +1,6 @@
 package com.lh1169835.movietracker
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -17,9 +18,9 @@ class AddMovieActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAddMovieBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         auth = Firebase.auth
 
+        //When pressed creates a movie and puts it in the DB
         binding.MovieAddBtn.setOnClickListener{
             var title = binding.textMovieTitle.text.toString()
             var genre = binding.genreSpinner.selectedItem.toString()
@@ -28,8 +29,8 @@ class AddMovieActivity : AppCompatActivity() {
 
             //creating movie if title, genre, and location are filled in
             if (title.isNotEmpty() && genre.isNotEmpty() && location.isNotEmpty()){
-//                var uID = auth.currentUser.uid can use after sign in is implemented
-                var uID = auth.uid
+                var uID = auth.currentUser.uid
+                //var uID = auth.uid
                 //creating Movie to be added to firestore
                 var movie = Movie(uID,title, notes, genre, location)
 
@@ -55,6 +56,10 @@ class AddMovieActivity : AppCompatActivity() {
             }else{
                 Toast.makeText(this,"Title, Genre, And Location are required",Toast.LENGTH_LONG).show()
             }
+        }
+        //When pressed take you back to the main activity
+        binding.viewMovieBtn.setOnClickListener{
+            startActivity(Intent(this,MainActivity::class.java))
         }
     }
 }
