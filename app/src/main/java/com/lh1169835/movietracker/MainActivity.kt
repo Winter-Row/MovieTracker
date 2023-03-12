@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity(), MovieViewAdapter.MovieItemListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //goes to the add movie activity
         binding.addMovieBtn.setOnClickListener {
             startActivity(Intent(this,AddMovieActivity::class.java))
         }
@@ -25,10 +26,12 @@ class MainActivity : AppCompatActivity(), MovieViewAdapter.MovieItemListener {
         })
     }
 
+    //gets the selected movie
     override fun movieSelected(movie: Movie) {
         Log.i("Movie", "$movie");
         var intent = Intent(this, MovieDetailsActivity::class.java)
 
+        //sends the data of the movie to the details activity
         intent.putExtra("title", movie.title)
         intent.putExtra("genre", movie.genre)
         intent.putExtra("note", movie.notes)
