@@ -3,6 +3,7 @@ package com.lh1169835.movietracker
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.viewModels
 import com.lh1169835.movietracker.databinding.ActivityMainBinding
 
@@ -25,6 +26,13 @@ class MainActivity : AppCompatActivity(), MovieViewAdapter.MovieItemListener {
     }
 
     override fun movieSelected(movie: Movie) {
-        TODO("Not yet implemented")
+        Log.i("Movie", "$movie");
+        var intent = Intent(this, MovieDetailsActivity::class.java)
+
+        intent.putExtra("title", movie.title)
+        intent.putExtra("genre", movie.genre)
+        intent.putExtra("note", movie.notes)
+        intent.putExtra("location", movie.location)
+        startActivity(intent)
     }
 }

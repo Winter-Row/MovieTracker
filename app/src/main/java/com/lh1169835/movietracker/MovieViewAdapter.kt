@@ -46,9 +46,13 @@ class MovieViewAdapter(val context : Context, val movies : List<Movie>, val item
         with(holder){
             movieTitleTextView.text = movie.title
             if(movie.notes.isNullOrEmpty()){
-                notesTextView.text = "No notes for "+movie.title
+                movie.notes = "No notes for "+movie.title
+                notesTextView.text = movie.notes
             }else{
                 notesTextView.text = movie.notes
+            }
+            itemView.setOnClickListener {
+                itemListener.movieSelected(movie)
             }
         }
     }
