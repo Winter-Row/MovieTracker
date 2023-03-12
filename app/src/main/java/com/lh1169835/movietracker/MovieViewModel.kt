@@ -1,6 +1,7 @@
 package com.lh1169835.movietracker
 
 import android.util.Log
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.ktx.auth
@@ -32,4 +33,8 @@ class MovieViewModel : ViewModel() {
                 }
             }//end of Snapshot
     }//end of init
+
+    fun getMovies() : LiveData<List<Movie>>{
+        return movies
+    }
 }
