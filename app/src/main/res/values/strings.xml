@@ -9,6 +9,8 @@
     <string name="enter_movie_title">Enter Movie Title</string>
     <string name="genre">Genre</string>
     <string name="view_movies">View Movies</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
     <string-array name="genres">
         <item>Choose genre</item>
         <item>Action</item>

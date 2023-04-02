@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity(), MovieViewAdapter.MovieItemListener {
         var intent = Intent(this, MovieDetailsActivity::class.java)
 
         //sends the data of the movie to the details activity
+        intent.putExtra("id", movie.uid)
         intent.putExtra("title", movie.title)
         intent.putExtra("genre", movie.genre)
         intent.putExtra("note", movie.notes)
