@@ -7,7 +7,7 @@
     tools:context=".AddMovieActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/editMovieBackground"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
@@ -36,15 +36,6 @@
         tools:layout_editor_absoluteX="27dp"
         tools:layout_editor_absoluteY="120dp" />
 
-    <Button
-        android:id="@+id/viewMovieBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="@string/view_movies"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
         android:id="@+id/genreSpinner"
@@ -108,11 +99,13 @@
         android:layout_height="40dp"
         android:ems="10"
         android:hint="@string/enter_movie_title"
-        android:inputType="textPersonName"
         android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@id/textAddNotes"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textHeader" />
+        app:layout_constraintTop_toBottomOf="@id/textHeader"
+        app:layout_constraintBottom_toTopOf="@id/textAddNotes"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="120dp" />
 
     <Spinner
         android:id="@+id/locationSpinner"
@@ -121,7 +114,7 @@
         android:entries="@array/location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/genreSpinner"
-        app:layout_constraintBottom_toTopOf="@id/MovieAddBtn"
+        app:layout_constraintBottom_toTopOf="@id/MovieSaveBtn"
         android:layout_marginEnd="10dp"
         tools:layout_editor_absoluteX="139dp"
         tools:layout_editor_absoluteY="465dp" />
@@ -144,15 +137,14 @@
         tools:layout_editor_absoluteY="465dp" />
 
     <Button
-        android:id="@+id/MovieAddBtn"
+        android:id="@+id/MovieSaveBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="32dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/viewMovieBtn"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="583dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textHeader"

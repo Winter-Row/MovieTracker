@@ -11,6 +11,7 @@
     <string name="view_movies">View Movies</string>
     <string name="delete">Delete</string>
     <string name="edit">Edit</string>
+    <string name="save">Save</string>
     <string-array name="genres">
         <item>Choose genre</item>
         <item>Action</item>

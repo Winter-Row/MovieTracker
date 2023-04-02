@@ -35,6 +35,17 @@ class MovieDetailsActivity : AppCompatActivity() {
             startActivity(Intent(this,MainActivity::class.java))
         }
 
+        binding.editBtn.setOnClickListener {
+            var intent = Intent(this, EditMovieActivity::class.java)
+            intent.putExtra("id", id)
+            intent.putExtra("docId", docId)
+            intent.putExtra("title", title)
+            intent.putExtra("genre", genre)
+            intent.putExtra("note", notes)
+            intent.putExtra("location", location)
+            startActivity(intent)
+        }
+
         //Deletes Document when pressed
         binding.deleteBtn.setOnClickListener {
             val db = FirebaseFirestore.getInstance().collection("movies").document(docId)
