@@ -151,8 +151,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/viewMovieBtn"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="583dp" />
+        />
 
     <TextView
         android:id="@+id/textHeader"

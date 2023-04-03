@@ -12,6 +12,7 @@
     <string name="delete">Delete</string>
     <string name="edit">Edit</string>
     <string name="save">Save</string>
+    <string name="edit_movie">Edit Movie</string>
     <string-array name="genres">
         <item>Choose genre</item>
         <item>Action</item>

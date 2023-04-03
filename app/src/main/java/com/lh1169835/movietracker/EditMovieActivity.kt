@@ -12,8 +12,8 @@ import com.lh1169835.movietracker.databinding.ActivityEditMovieBinding
 class EditMovieActivity : AppCompatActivity() {
     private lateinit var binding: ActivityEditMovieBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = ActivityEditMovieBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
+        binding = ActivityEditMovieBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         //getting the information passed from the last activity

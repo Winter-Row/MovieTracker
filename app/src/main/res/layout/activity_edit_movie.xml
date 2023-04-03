@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddMovieActivity">
+    tools:context=".EditMovieActivity">
 
     <ImageView
         android:id="@+id/editMovieBackground"
@@ -151,7 +151,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/add_a_movie"
+        android:text="@string/edit_movie"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
